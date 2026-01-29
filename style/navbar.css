@@ -1,0 +1,81 @@
+/* ===== NAVBAR BASE ===== */
+.custom-navbar {
+    background: rgba(15, 15, 20, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 0.8rem 1.5rem;
+}
+/* ===== LOGO STYLE (JUAN) ===== */
+.brand-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.35em;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 0.5rem;
+
+    background: linear-gradient(90deg, #6a85b6, #bac8e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: letter-spacing 0.3s ease, transform 0.3s ease;
+}
+/* Subtle underline accent */
+.brand-logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, #6a85b6, #bac8e0);
+    opacity: 0.8;
+}
+/* Hover = confidence, not aggression */
+.brand-logo:hover {
+    letter-spacing: 0.45em;
+    transform: translateY(-1px);
+}
+/* ===== NAV LINKS ===== */
+.nav-links .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.75) !important;
+    margin-left: 1.5rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+/* Hover underline animation */
+.nav-links .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #6a85b6, #bac8e0);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+/* Hover effect */
+.nav-links .nav-link:hover {
+    color: #ffffff !important;
+}
+.nav-links .nav-link:hover::after {
+    width: 100%;
+}
+/* ===== MOBILE ===== */
+@media (max-width: 991px) {
+    .nav-links .nav-link {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .brand-logo {
+        letter-spacing: 0.25em;
+    }
+}

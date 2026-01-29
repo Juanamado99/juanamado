@@ -1,0 +1,54 @@
+/* ===== CAROUSEL IMAGE===== */
+#interests .carousel-item {
+    position: relative;
+    height: 90vh; /* Fixed height */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Make images fill the container and crop */
+#interests .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crop images without distortion */
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+/* Add dark vignette flare */
+#interests .carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0,0,0,0) 40%,
+        rgba(0,0,0,0.35) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    pointer-events: none;
+}
+
+/* Hover effect: darker + zoom */
+#interests .carousel-item:hover img {
+    filter: brightness(0.65) contrast(1.05);
+    transform: scale(1.05);
+}
+
+#interests .carousel-item:hover::after {
+    opacity: 1;
+}
+
+/* Ensure captions stay readable */
+#interests .carousel-caption {
+    background: rgba(0,0,0,0.35); /* subtle semi-transparent background */
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+/* Optional: caption text style */
+#interests .carousel-caption h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff !important;
+}

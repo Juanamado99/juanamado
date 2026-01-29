@@ -1,0 +1,126 @@
+/* ===== FOOTER ===== */
+.site-footer {
+    background: linear-gradient(180deg, #0b0e14 0%, #06080c 100%);
+    color: #cbd5e1;
+    padding: 4rem 0 2rem;
+    font-size: 0.95rem;
+}
+/* Grid layout */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+/* Titles */
+.footer-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #e5e7eb;
+    margin-bottom: 1rem;
+}
+.footer-subtitle {
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+/* Text */
+.footer-text {
+    line-height: 1.6;
+    max-width: 320px;
+}
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: #93c5fd;
+    transition: width 0.3s ease;
+}
+.footer-links a:hover {
+    color: #93c5fd;
+}
+.footer-links a:hover::after {
+    width: 100%;
+}
+/* Bottom line */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+.footer-divider {
+    margin: 0 0.5rem;
+}
+/* ===== FOOTER ICONS ===== */
+.footer-icons {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+}
+.footer-icons a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #cbd5e1;
+    font-size: 1.15rem;
+
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+/* Hover = calm confidence */
+.footer-icons a:hover {
+    color: #93c5fd;
+    background: rgba(147,197,253,0.12);
+    box-shadow: 0 6px 18px rgba(147,197,253,0.25);
+    transform: translateY(-3px);
+}
+/* Accessibility */
+.footer-icons a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(147,197,253,0.35);
+}
+.built-with {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+.built-with i {
+    font-size: 1.2rem;
+}
