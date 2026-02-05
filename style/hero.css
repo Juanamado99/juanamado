@@ -47,7 +47,7 @@
     transform: translateY(0);
     animation: floatUp 3s ease;
 }
-.fade-block.out {
+.fade-block.invisible {
     opacity: 0;
     transform: translateY(-30px);
 }
