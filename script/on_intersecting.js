@@ -3,45 +3,7 @@ const arrayElements = Array.from(fadeElements);
 const elementsClassList = arrayElements.map(item => item["className"]);
 let isListenerCreated = false;
 let hasVisible = false;
-
-const onScroll = () => {
-    const page = document.body.parentNode;
-    const posPercentage = page.scrollTop/(page.scrollHeight-page.clientHeight);
-
-    if (posPercentage < 0.05 || arrayElements[0].className.includes("outscreen")) {
-        arrayElements[0].classList.remove('visible');
-        arrayElements[0].classList.add('invisible');
-    } else {
-        arrayElements[0].classList.remove('invisible');
-        arrayElements[0].classList.add('visible');
-    }
-
-    if (posPercentage < 0.1 || arrayElements[1].className.includes("outscreen")) {
-        arrayElements[1].classList.remove('visible');
-        arrayElements[1].classList.add('invisible');
-    } else {
-        arrayElements[1].classList.remove('invisible');
-        arrayElements[1].classList.add('visible');
-    }
-
-    if (posPercentage < 0.15 || arrayElements[2].className.includes("outscreen")) {
-        arrayElements[2].classList.remove('visible');
-        arrayElements[2].classList.add('invisible');
-    } else {
-        arrayElements[2].classList.remove('invisible');
-        arrayElements[2].classList.add('visible');
-    }
-
-    if (posPercentage < 0.2 || arrayElements[3].className.includes("outscreen")) {
-        arrayElements[3].classList.remove('visible');
-        arrayElements[3].classList.add('invisible');
-    } else {
-        arrayElements[3].classList.remove('invisible');
-        arrayElements[3].classList.add('visible');
-    }
-    
-    manageScrollListener();
-};
+let animationEnabled = false;
 
 const observer = new IntersectionObserver((entries) => {
     manageScrollListener();
@@ -50,6 +12,9 @@ const observer = new IntersectionObserver((entries) => {
         if(entry.isIntersecting){
             el.classList.add('onscreen');
             el.classList.remove('outscreen');
+            if(!animationEnabled) {
+                animationEnabled = true;
+            }
         } else {
             el.classList.remove('onscreen');
             el.classList.add('outscreen');
@@ -68,5 +33,31 @@ function manageScrollListener() {
     if (isListenerCreated && !hasVisible) {
         isListenerCreated = false;
         document.removeEventListener("scroll", onScroll);
+    }
+}
+
+const onScroll = () => {
+    if(!animationEnabled) return;
+
+    const page = document.body.parentNode;
+    const posPercentage = page.scrollTop/(page.scrollHeight-page.clientHeight);
+    
+    for(i = 0; i<=3; i++) {
+        toggle(arrayElements[i], posPercentage < i*0.05+0.05);
+    }
+    
+    manageScrollListener();
+};
+
+function toggle(el, shouldHide) {
+    if (!shouldHide && el.classList.contains("onscreen")) {
+        el.classList.remove("novisible");
+        el.classList.remove("preload");
+        el.classList.add("visible");
+    } else {
+        if (!el.classList.contains("preload")) {
+            el.classList.remove("visible");
+            el.classList.add("novisible");
+        }
     }
 }

@@ -38,24 +38,42 @@
     color: #eee;
     margin: 1rem 0;
     text-align: center;
-    opacity: 0;
+    animation-play-state: paused;
+    /*opacity: 0;
     transform: translateY(30px);
-    transition: opacity 5s ease, transform 5s ease;
+    transition: opacity 5s ease, transform 5s ease;*/
 }
 .fade-block.visible {
     opacity: 1;
     transform: translateY(0);
     animation: floatUp 3s ease;
 }
-.fade-block.invisible {
+.fade-block.preload {
     opacity: 0;
     transform: translateY(-30px);
 }
+.fade-block.novisible {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation-name: floatDown;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-play-state: running;
+}
 /* Floating animation on appear */
 @keyframes floatUp {
-    0% { transform: translateY(30px); }
+    0% { transform: translateY(30px); 
+        opacity:0; }
     50% { transform: translateY(-5px); }
-    100% { transform: translateY(0); }
+    100% { transform: translateY(0);
+        opacity:1; }
+}
+@keyframes floatDown {
+    0% { transform: translateY(0);
+        opacity: 1;}
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(30px); 
+        opacity: 0;}
 }
 /* === Subtitle hover underline === */
 .hero-subtitle {
