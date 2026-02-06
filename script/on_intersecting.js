@@ -20,7 +20,7 @@ const observer = new IntersectionObserver((entries) => {
             el.classList.add('outscreen');
         }
     });
-}, { threshold: 1 });
+}, { threshold: 0.2 });
 
 fadeElements.forEach(el => observer.observe(el));
 
