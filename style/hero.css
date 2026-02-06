@@ -52,14 +52,6 @@
     opacity: 0;
     /*transform: translateY(300px);*/
 }
-.fade-block.novisible {
-    opacity: 0;
-    transform: translateY(300px);
-    animation-name: floatDown;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-play-state: running;
-}
 /* Floating animation on appear */
 @keyframes floatUp {
     0% { transform: translateY(-300px); 
@@ -69,14 +61,7 @@
     100% { transform: translateY(0);
         opacity:1; }
 }
-@keyframes floatDown {
-    0% { transform: translateY(0);
-        opacity: 1;}
-    50% { transform: translateY(50px);
-        opacity: 0.8;}
-    100% { transform: translateY(-300px); 
-        opacity: 0;}
-}
+
 /* === Subtitle hover underline === */
 .hero-subtitle {
     position: relative;
