@@ -20,7 +20,7 @@ const observer = new IntersectionObserver((entries) => {
             el.classList.add('outscreen');
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 1 });
 
 fadeElements.forEach(el => observer.observe(el));
 
@@ -42,8 +42,8 @@ const onScroll = () => {
     const page = document.body.parentNode;
     const posPercentage = page.scrollTop/(page.scrollHeight-page.clientHeight);
     
-    for(i = 0; i<=3; i++) {
-        toggle(arrayElements[i], posPercentage < i*0.05+0.05);
+    for(i = 0; i<=4; i++) {
+        toggle(arrayElements[i], posPercentage < 0.05);
     }
     
     manageScrollListener();
