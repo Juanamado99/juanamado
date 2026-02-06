@@ -54,10 +54,5 @@ function toggle(el, shouldHide) {
         el.classList.remove("novisible");
         el.classList.remove("preload");
         el.classList.add("visible");
-    } else {
-        if (!el.classList.contains("preload")) {
-            el.classList.remove("visible");
-            el.classList.add("novisible");
-        }
     }
 }
