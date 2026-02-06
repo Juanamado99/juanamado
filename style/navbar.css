@@ -15,7 +15,7 @@
     position: relative;
     padding-left: 0.5rem;
 
-    background: linear-gradient(90deg, #6a85b6, #bac8e0);
+    background: linear-gradient(90deg, var(--azul), var(--blanco));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,7 +30,7 @@
     bottom: -6px;
     width: 40%;
     height: 2px;
-    background: linear-gradient(90deg, #6a85b6, #bac8e0);
+    background: linear-gradient(90deg, var(--azul), var(--blanco));
     opacity: 0.8;
 }
 /* Hover = confidence, not aggression */
@@ -57,7 +57,7 @@
     bottom: -6px;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #6a85b6, #bac8e0);
+    background: linear-gradient(90deg, var(--azul), var(--blanco));
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
