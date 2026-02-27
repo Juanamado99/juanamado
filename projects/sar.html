@@ -105,8 +105,10 @@
                     <div class="container">
                         <h2 class="section-title">Context</h2>
                         <p>
-                            Personal MATLAB-based simulation project to model SAR signal generation and target
-                            reconstruction.
+                            Personal MATLAB-based simulation project developed to deepen theoretical understanding
+                            from the courses Radar Systems Engineering and Spaceborne Radar Remote Sensing. The
+                            project focused on modeling SAR signal generation and target reconstruction from first
+                            principles.
                         </p>
                     </div>
                 </section>
@@ -116,8 +118,13 @@
                     <div class="container">
                         <h2 class="section-title">Engineering Problem</h2>
                         <p>
-                            Simulate the radar return from a point target using chirp signals and reconstruct the
-                            target image via matched filtering and convolution processing.
+                            Simulate the radar return from a point target using chirp waveforms and reconstruct the target
+                            image through matched filtering and convolution-based processing. The primary challenges
+                            included:<br>
+                            - Accurately modeling the point target response as a function of range<br>
+                            - Incorporating radar platform motion and its Doppler frequency effects<br>
+                            - Accounting for received power variation with azimuth angle<br>
+                            - Achieving proper range and azimuth compression
                         </p>
                     </div>
                 </section>
@@ -127,10 +134,12 @@
                     <div class="container">
                         <h2 class="section-title">My Contribution</h2>
                         <ul class="project-list">
-                            <li>Modeled transmitted chirp waveform</li>
-                            <li>Simulated target reflection and satellite motion</li>
+                            <li>Modeled transmitted linear FM chirp waveform</li>
+                            <li>Simulated target reflection considering propagation delay and motion</li>
                             <li>Implemented convolution-based matched filtering</li>
-                            <li>Analyzed resolution vs type of azimuth and range compression</li>
+                            <li>Performed range compression</li>
+                            <li>Implemented azimuth processing and analyzed resolution limitations</li>
+                            <li>Evaluated resolution trade-offs between range and azimuth domains</li>
                         </ul>
                     </div>
                 </section>
@@ -141,6 +150,9 @@
                         <h2 class="section-title">Tools & Methods</h2>
                         <div class="tools-grid">
                             <span>MATLAB</span>
+                            <span>Linear FM signal modeling</span>
+                            <span>Matched filtering</span>
+                            <span>Range and azimuth compression algorithms</span>
                             <span>SAR</span>
                         </div>
                     </div>
@@ -151,8 +163,10 @@
                     <div class="container">
                         <h2 class="section-title">Results</h2>
                         <p>
-                            Successful range compression with different methods. Partial azimuth reconstruction
-                            (resolution limitations identified). Identified modeling constraints affecting azimuth accuracy
+                            Successful range compression using matched filtering. 
+                            Partial azimuth reconstruction achieved.
+                            Identified resolution degradation due to motion modeling and Doppler approximation constraints.
+                            Evaluated sensitivity of azimuth resolution to platform velocity assumptions
                         </p>
                     
                         <div class="visual-grid">
@@ -168,8 +182,9 @@
                     <div class="container">
                         <h2 class="section-title">What I Learned</h2>
                         <p>
-                            Improved understanding of SAR signal processing and the practical challenges of
-                            azimuth resolution and motion modeling.
+                            Developed a stronger understanding of SAR signal processing fundamentals, particularly
+                            the role of Doppler processing and motion modeling in azimuth resolution. Gained
+                            practical insight into the sensitivity of SAR reconstruction to modeling assumptions.
                         </p>
                     </div>
                 </section>

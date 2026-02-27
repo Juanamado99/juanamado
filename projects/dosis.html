@@ -105,8 +105,10 @@
                     <div class="container">
                         <h2 class="section-title">Context</h2>
                         <p>
-                            Research-oriented multidisciplinary job focused on the design and optimization 
-                            of a compact patch antenna array for radar applications with a PhD team.
+                            Research-oriented multidisciplinary project focused on the design and optimization of a
+                            compact patch antenna array with symmetrical input and output ports for radar applications.
+                            The work was conducted in collaboration with a PhD research team developing a Doppler-based
+                            target auto-processing chip.
                         </p>
                     </div>
                 </section>
@@ -116,9 +118,14 @@
                     <div class="container">
                         <h2 class="section-title">Engineering Problem</h2>
                         <p>
-                            Design an antenna array given the existing PCB height, materials and port width
-                            to radiate 45º against the radar, 7dBi or greater of gain and have a coupling factor
-                            lower than 30dB.
+                            Design a microstrip antenna array under strict physical constraints (fixed PCB height,
+                            substrate materials, and predefined chip port widths) capable of:<br>
+                            - Radiationg at 45° relative to the radar reference axis<br>
+                            - Achieving a minimum gain of 7 dBi<br>
+                            - Maintaining inter-port coupling below −30 dB<br>
+                            Since the chip port dimensions were fixed, the primary challenge was to ensure proper
+                            50 &Omega; impedance matching for maximum power transfer while minimizing mutual coupling
+                            between input and output ports.
                         </p>
                     </div>
                 </section>
@@ -128,10 +135,11 @@
                     <div class="container">
                         <h2 class="section-title">My Contribution</h2>
                         <ul class="project-list">
-                            <li>Design modeling and simulation</li>
-                            <li>Parameter sweeps and geometry optimization</li>
-                            <li>Design and test decoupling structures</li>
-                            <li>Radiation pattern, impedance matching, gain and bandwidth analysis</li>
+                            <li>Full EM modeling and simulation of the antenna array</li>
+                            <li>Parametric sweeps and geometry optimization</li>
+                            <li>Design and evaluation of decoupling structures</li>
+                            <li>Analysis of radiation pattern, impedance matching, gain, bandwidth and coupling performance</li>
+                            <li>Iterative refinement of the feed network and array configuration</li>
                         </ul>
                     </div>
                 </section>
@@ -141,8 +149,10 @@
                     <div class="container">
                         <h2 class="section-title">Tools & Methods</h2>
                         <div class="tools-grid">
-                            <span>CST Studio Suite</span>
+                            <span>CST Studio Suite (full-wave FEM simulation)</span>
+                            <span>Microstrip line impedance analytical calculator</span>
                             <span>Book: Antenna Theory - Balanis</span>
+                            <span>Book: Microwave Engineering - Pozar</span>
                         </div>
                     </div>
                 </section>
@@ -152,11 +162,10 @@
                     <div class="container">
                         <h2 class="section-title">Results</h2>
                         <p>
-                            Achieved 11.5 dBi gain.
-                            Reached -20dB S21 parameter (between input and output port) which
-                            still needs to be improved by 10dB.
-                            Improved impedance matching to maximize chip output signal with a 
-                            double layer PCB.
+                            Achieved 11.5 dBi gain (exceeding the 7 dBi target).
+                            Reduced S21 (inter-port coupling) to -20dB (10dB improvement still required to meet specification).
+                            Improved impedance matching through a double-layer PCB implementation. Validated radiation
+                            characteristics and field distribution through full-wave simulation.
                             
                         </p>
                     
@@ -174,9 +183,9 @@
                     <div class="container">
                         <h2 class="section-title">What I Learned</h2>
                         <p>
-                            Improved understanding of behavior in strip lines waveguides and efficiency 
-                            using optimization techniques. Wider knowledge on radiation patterns and CST Studio Suite
-                            results for antenna design.
+                            Developed a deeper understanding of microstrip-based array behavior, feed network design,
+                            and coupling mitigation techniques. Strengthened practical expertise in CST-driven
+                            optimization and high-frequency PCB-constrained antenna design.
                         </p>
                     </div>
                 </section>

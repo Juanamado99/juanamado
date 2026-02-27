@@ -105,8 +105,11 @@
                     <div class="container">
                         <h2 class="section-title">Context</h2>
                         <p>
-                            Personal project to model and analyze a complete baseband communication
-                            system under noisy channel conditions.
+                            Personal project developed to model and analyze a complete baseband digital
+                            communication system under noisy channel conditions, reinforcing concepts from
+                            Mobile Communications, Radio Receivers, and Signal Transmission Theory. The
+                            project included end-to-end processing from message encoding to reception and
+                            decoding.
                         </p>
                     </div>
                 </section>
@@ -116,8 +119,16 @@
                     <div class="container">
                         <h2 class="section-title">Engineering Problem</h2>
                         <p>
-                            Evaluate the performance of different digital modulation schemes (BPSK, PSK, QAM)
-                            under AWGN and analyze the impact of noise on bit error rate (BER).
+                            Evaluate the performance of different digital modulation schemes (BPSK, QPSK/PSK,
+                            and QAM) under an Additive White Gaussian Noise (AWGN) channel and analyze their
+                            impact on Bit Error Rate (BER).<br>
+                            The system was designed to implement the full transmission chain:<br>
+                            - Conversion of a human-readable message (ASCII) into binary<br>
+                            - Bitstream grouping and symbol mapping<br>
+                            - Digital modulation<br>
+                            - Transmission through an AWGN channel<br>
+                            - Demodulation and decoding<br>
+                            - BER computation and message reconstruction
                         </p>
                     </div>
                 </section>
@@ -127,11 +138,12 @@
                     <div class="container">
                         <h2 class="section-title">My Contribution</h2>
                         <ul class="project-list">
-                            <li>Designed full transmitter–receiver chain</li>
-                            <li>Implemented symbol mapping and demapping</li>
-                            <li>Developed bit encoding and decoding</li>
-                            <li>Added AWGN channel model</li>
-                            <li>Computed BER vs SNR performance</li>
+                            <li>Designed and implemented a complete transmitter–receiver chain</li>
+                            <li>Developed ASCII-to-bit encoding and bitstream management</li>
+                            <li>Implemented symbol mapping and demapping for multiple modulation schemes</li>
+                            <li>Modeled an AWGN channel</li>
+                            <li>Computed BER vs SNR performance curves</li>
+                            <li>Compared spectral efficiency vs robustness trade-offs</li>
                         </ul>
                     </div>
                 </section>
@@ -142,6 +154,9 @@
                         <h2 class="section-title">Tools & Methods</h2>
                         <div class="tools-grid">
                             <span>MATLAB</span>
+                            <span>Digital modulation theory (BPSK, PSK, QAM)</span>
+                            <span>AWGN channel modeling</span>
+                            <span>Statistical BER estimation</span>
                         </div>
                     </div>
                 </section>
@@ -151,9 +166,10 @@
                     <div class="container">
                         <h2 class="section-title">Results</h2>
                         <p>
-                            Generated BER vs SNR curves for multiple modulations.
-                            Verified theoretical behavior trends. Observed trade-offs
-                            between spectral efficiency and noise robustness
+                           Generated BER vs SNR curves for multiple modulation schemes. 
+                           Verified expected theoretical trends (higher-order QAM more spectrally efficient but less noise-robust).
+                           Successfully reconstructed transmitted messages under different SNR conditions.
+                           Identified potential system improvements such as adding error-detection mechanisms (e.g., parity check or CRC).
                         </p>
                     
                         <div class="visual-grid">
@@ -169,8 +185,9 @@
                     <div class="container">
                         <h2 class="section-title">What I Learned</h2>
                         <p>
-                            Strengthened intuition on modulation performance trade-offs and practical
-                            signal degradation under noise.
+                            Strengthened practical intuition on modulation trade-offs, spectral efficiency, and noise
+                            sensitivity. Gained hands-on experience in implementing a complete digital communication
+                            chain and evaluating system-level performance under stochastic channel conditions.
                         </p>
                     </div>
                 </section>
