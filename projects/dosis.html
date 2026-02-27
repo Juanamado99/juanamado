@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Juan Amado | DoSis Radar</title>
+        <link rel="icon" href="../img/favicon.ico">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet"
+            href="../style/colors.css"
+        />
+        <link rel="stylesheet"
+            href="../style/navbar.css"
+        />
+        <link rel="stylesheet"
+            href="../style/projects.css"
+        />
+        <link rel="stylesheet"
+            href="../style/footer.css"
+        />
+        <link rel="stylesheet"
+            href="../style/carousel.css"
+        />
+        <link rel="stylesheet"
+            href="../style/hero.css"
+        />
+        <link rel="stylesheet"
+            href="../style/project-page.css"
+        />
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-dark navbar-expand-xl custom-navbar">
+                <a class="navbar-brand brand-logo" href="#">JUAN</a>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarlist">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarlist">
+                    <ul class="navbar-nav ml-auto nav-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#hero">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#featured-projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+                
+        <!-- HERO -->
+        <section class="project-hero">
+            <div class="container text-center">
+                <h1 class="project-title">Patch Antenna Array (DoSis)</h1>
+                <p class="project-context">
+                    Student Job in Research (KIT) · Team of 5 PhD · 2025 · 
+                    Antenna Systems in Radar + Integrated Circuit Research Environment
+                </p>
+            </div>
+        </section>
+        
+        <main class="project-content">
+            <section class="project-grid">
+                <!-- HERO IMAGE -->
+                <section class="project-image">
+                    <img src="../img/dosis.png" alt="Project visual representation">
+                </section>
+
+                <!-- OVERVIEW / CONTEXT -->
+                <section class="project-section context">
+                    <div class="container">
+                        <h2 class="section-title">Context</h2>
+                        <p>
+                            Research-oriented multidisciplinary project focused on the design and optimization of a
+                            compact patch antenna array with symmetrical input and output ports for radar applications.
+                            The work was conducted in collaboration with a PhD research team developing a Doppler-based
+                            target auto-processing chip.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- PROBLEM -->
+                <section class="project-section engineering-problem">
+                    <div class="container">
+                        <h2 class="section-title">Engineering Problem</h2>
+                        <p>
+                            Design a microstrip antenna array under strict physical constraints (fixed PCB height,
+                            substrate materials, and predefined chip port widths) capable of:<br>
+                            - Radiationg at 45° relative to the radar reference axis<br>
+                            - Achieving a minimum gain of 7 dBi<br>
+                            - Maintaining inter-port coupling below −30 dB<br>
+                            Since the chip port dimensions were fixed, the primary challenge was to ensure proper
+                            50 &Omega; impedance matching for maximum power transfer while minimizing mutual coupling
+                            between input and output ports.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- CONTRIBUTION -->
+                <section class="project-section contribution">
+                    <div class="container">
+                        <h2 class="section-title">My Contribution</h2>
+                        <ul class="project-list">
+                            <li>Full EM modeling and simulation of the antenna array</li>
+                            <li>Parametric sweeps and geometry optimization</li>
+                            <li>Design and evaluation of decoupling structures</li>
+                            <li>Analysis of radiation pattern, impedance matching, gain, bandwidth and coupling performance</li>
+                            <li>Iterative refinement of the feed network and array configuration</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- TOOLS -->
+                <section class="project-section tools">
+                    <div class="container">
+                        <h2 class="section-title">Tools & Methods</h2>
+                        <div class="tools-grid">
+                            <span>CST Studio Suite (full-wave FEM simulation)</span>
+                            <span>Microstrip line impedance analytical calculator</span>
+                            <span>Book: Antenna Theory - Balanis</span>
+                            <span>Book: Microwave Engineering - Pozar</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- RESULTS -->
+                <section class="project-section results">
+                    <div class="container">
+                        <h2 class="section-title">Results</h2>
+                        <p>
+                            Achieved 11.5 dBi gain (exceeding the 7 dBi target).
+                            Reduced S21 (inter-port coupling) to -20dB (10dB improvement still required to meet specification).
+                            Improved impedance matching through a double-layer PCB implementation. Validated radiation
+                            characteristics and field distribution through full-wave simulation.
+                            
+                        </p>
+                    
+                        <div class="visual-grid">
+                            <img src="../img/DosisDesign.png" alt="S-parameters plot">
+                            <img src="../img/DosisSParams.png" alt="Field distribution">
+                            <img src="../img/DosisAnim.gif" alt="Radiation pattern">
+                            <img src="../img/DosisPattern.png" alt="Radiation pattern">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LEARNING -->
+                <section class="project-section learning">
+                    <div class="container">
+                        <h2 class="section-title">What I Learned</h2>
+                        <p>
+                            Developed a deeper understanding of microstrip-based array behavior, feed network design,
+                            and coupling mitigation techniques. Strengthened practical expertise in CST-driven
+                            optimization and high-frequency PCB-constrained antenna design.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <!-- BACK BUTTON -->
+        <section class="project-section text-center">
+            <a href="../index.html#featured-projects" class="btn btn-project">
+                ← Back to Projects
+            </a>
+        </section>
+        
+        <footer class="site-footer" id="contact">
+            <div class="container">
+                <div class="footer-grid">
+                
+                    <!-- Identity -->
+                    <div class="footer-block">
+                        <h5 class="footer-title">Juan Amado</h5>
+                        <p class="footer-text">
+                            Telecommunications Engineering. RF systems,
+                            antenna design and applied research.
+                        </p>
+                    </div>
+                
+                    <!-- Contact -->
+                    <div class="footer-block">
+                        <h6 class="footer-subtitle">Connect</h6>
+                        <div class="footer-icons">
+                        
+                            <a href="mailto:juan1999@movistar.es" aria-label="Email">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                            <a href="https://www.linkedin.com/in/juan-amado-lloria/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        
+                            <a href="https://www.instagram.com/juanchelvamado" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        
+                            <a href="https://wa.me/34665307193" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        
+                            <a href="https://www.youtube.com/@juanamado99" target="_blank" aria-label="YouTube">
+                                <i class="fab fa-youtube-play"></i>
+                            </a>
+                        
+                        </div>
+                    </div>
+
+                
+                    <!-- Extras -->
+                    <div class="footer-block">
+                        <h6 class="footer-subtitle">More</h6>
+                        <ul class="footer-links">
+                            <li><a href="../index.html#hero">About</a></li>
+                            <li><a href="../index.html#featured-projects">Projects</a></li>
+                            <li><a href="#">Download CV</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                <div class="footer-bottom">
+                    <span>© 2026 Juan Amado</span>
+                    <span class="footer-divider">·</span>
+                    <span>Built with</span>
+                    <i class="fab fa-html5" title="HTML5"></i>
+                    <i class="fab fa-css3-alt" title="CSS3"></i>
+                    <i class="fab fa-js-square" title="JavaScript"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

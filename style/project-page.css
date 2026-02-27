@@ -1,0 +1,149 @@
+/* ===== PROJECT PAGE ===== */
+.project-page {
+    font-family: 'Roboto', sans-serif;
+    color: #1f2937;
+}
+
+/* HERO */
+.project-hero {
+    padding: 7rem 0 4rem 0;
+    background: linear-gradient(180deg, #f8f9fb 0%, #eef1f6 100%);
+}
+.project-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--azul), #272b36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project-context {
+    color: var(--negro);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+/* GRID */
+.project-grid {
+    display: block; /* default mobile */
+}
+.project-image {
+    margin: 4rem 0;
+}
+.project-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+/* Desktop Grid 3x2 Disposition */
+@media (min-width: 768px) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 2rem;
+        margin: 1rem;
+    }
+    .context {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .engineering-problem {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .project-image {
+        grid-column: 2;
+        grid-row: 1 / span 2; /* spans first two rows */
+    }
+    .contribution {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .tools {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .results {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+    .learning {
+        grid-column: 1 / span 2;
+        grid-row: 5;
+    }
+
+}
+
+/* SECTIONS */
+.project-section {
+    padding: 2rem 1rem;
+    font-size: 1.04rem;
+}
+@media (min-width: 1200px) {
+    .project-section {
+        padding: 2rem 4rem;
+    }
+}
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+}
+
+/* LIST */
+.project-list {
+    list-style: none;
+    padding-left: 0;
+}
+.project-list li {
+    margin-bottom: 0.7rem;
+    padding-left: 1rem;
+    position: relative;
+}
+.project-list li::before {
+    content: "•";
+    color: var(--azul);
+    position: absolute;
+    left: 0;
+}
+
+/* TOOLS GRID */
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.tools-grid span {
+    background: rgba(106,133,182,0.15);
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-weight: 500;
+    border-color: #c7d2fe;
+    color: var(--negro);
+    transition: all 0.3s ease;
+}
+.tools-grid span:hover {
+    background: var(--negro);
+    color: white;
+    border-color: var(--negro);
+}
+
+/* RESULTS VISUAL GRID */
+.visual-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.visual-grid img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
