@@ -25,5 +25,24 @@
         "footer-more": "More",
         "btn-download-cv2": "Download CV",
         "builtwith": "Built with"
+    },
+    "projects": {
+        "context":"Context",
+        "problem":"Engineering Problem",
+        "contribution": "My Contribution",
+        "tools":"Tools & Methods",
+        "results":"Results",
+        "learned":"What I Learned",
+        "back": "Back to Projects"
+    },
+    "comm": {
+        "title":"Digital Communication System Simulation with Noise and BER Analysis",
+        "data":"Personal Project · Individual · 2024 · Telecommunications Engineering",
+        "context":"Personal project developed to model and analyze a complete baseband digital communication system under noisy channel conditions, reinforcing concepts from Mobile Communications, Radio Receivers, and Signal Transmission Theory. The project included end-to-end processing from message encoding to reception and decoding.",
+        "problem":"Evaluate the performance of different digital modulation schemes (BPSK, QPSK/PSK, and QAM) under an Additive White Gaussian Noise (AWGN) channel and analyze their impact on Bit Error Rate (BER).<br> The system was designed to implement the full transmission chain:<br> - Conversion of a human-readable message (ASCII) into binary<br> - Bitstream grouping and symbol mapping<br> - Digital modulation<br> - Transmission through an AWGN channel<br> - Demodulation and decoding<br> - BER computation and message reconstruction",
+        "contribution":"<li>Designed and implemented a complete transmitter–receiver chain</li> <li>Developed ASCII-to-bit encoding and bitstream management</li> <li>Implemented symbol mapping and demapping for multiple modulation schemes</li> <li>Modeled an AWGN channel</li> <li>Computed BER vs SNR performance curves</li> <li>Compared spectral efficiency vs robustness trade-offs</li>",
+        "tools":"<span>MATLAB</span> <span>Digital modulation theory (BPSK, PSK, QAM)</span> <span>AWGN channel modeling</span> <span>Statistical BER estimation</span>",
+        "results":"Generated BER vs SNR curves for multiple modulation schemes. Verified expected theoretical trends (higher-order QAM more spectrally efficient but less noise-robust). Successfully reconstructed transmitted messages under different SNR conditions. Identified potential system improvements such as adding error-detection mechanisms (e.g., parity check or CRC).",
+        "learned":"Strengthened practical intuition on modulation trade-offs, spectral efficiency, and noise sensitivity. Gained hands-on experience in implementing a complete digital communication chain and evaluating system-level performance under stochastic channel conditions."
     }
 }

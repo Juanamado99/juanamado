@@ -1,7 +1,7 @@
 async function loadLanguage(lang) {
-    const response = await fetch(`/lang/${lang}.json`);
+    const response = await fetch(langPath + lang + ".json");
     const translations = await response.json();
-    
+
     document.querySelectorAll("[data-i18n]").forEach(element => {
     const keys = element.getAttribute("data-i18n").split(".");
     let text = translations;
@@ -10,7 +10,7 @@ async function loadLanguage(lang) {
         text = text[key];
     });
 
-    if (text) element.innerText = text;
+    if (text) element.innerHTML = text;
     });
 
     localStorage.setItem("language", lang);
