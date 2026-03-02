@@ -1,0 +1,29 @@
+{
+    "home": {
+        "about": "Sobre mí",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "subtitle": "Descubre una mentalidad única",
+        "description1":"¡Bienvenido! Soy Juan",
+        "description2":"Estudiante en ingeniería de telecomunicaciones con experiencia en diseño de antenas, simulación de microondas (EM) y tratamiento de señales.",
+        "description3":"Disfruto de la resolución estructurada de problemas y su aplicación en sistemas reales, con interés en RF, comunicaciones espaciales y tecnologías emergentes.",
+        "btn-discover":"Descrubre mis proyectos",
+        "interest1": "Simulación y diseño de antenas",
+        "interest2": "Sistemas RF",
+        "interest3": "Tratamiento de señales y comunicaciones",
+        "interest4": "Foco en investigación",
+        "projects-subtitle": "Aquí algunos de mis logros",
+        "project1": "Array de antenas patch (DoSis)",
+        "project2": "Antenas vivaldi, patch circular y cilíndrica",
+        "project3": "Simulación de Radar de Apertura Sintético (SAR)",
+        "project4": "Simulación de sistemas de comunicaciones",
+        "project5": "Transición guiaonda dieléctrica a PCB",
+        "btn-more": "Ver más",
+        "btn-download-cv": "Descarga mi CV",
+        "footer-description": "Ingeniero de telecomunicaciones. Sistemas RF, diseño de antenas e investigación aplicada.",
+        "connect": "Contacto",
+        "footer-more": "Otros",
+        "btn-download-cv2": "Descarga mi CV",
+        "builtwith": "Desarrollado con"
+    }
+}

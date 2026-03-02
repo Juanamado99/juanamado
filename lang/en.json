@@ -1,0 +1,29 @@
+{
+    "home": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "subtitle": "Discover a unique mindset",
+        "description1": "Welcome! I'm Juan.",
+        "description2": "Telecommunications Engineering student with experience in antenna design, microwave simulations and signal processing.",
+        "description3": "I enjoy structured problem-solving and translating theory into practical systems, with interest in RF, space communications, and emerging technologies.",
+        "btn-discover": "Discover projects",
+        "interest1": "Antenna design & simulation",
+        "interest2": "RF Systems",
+        "interest3": "Signal processing & comms",
+        "interest4": "Research-oriented mindset",
+        "projects-subtitle": "Here are some of my main achievements",
+        "project1": "Patch Antenna Array (DoSis)",
+        "project2": "Vivaldi, Circular Patch and Can Antenna",
+        "project3": "Synthetic Aperture Radar (SAR) Simulation",
+        "project4": "Communication System Simulation",
+        "project5": "Dielectric Waveguide Transition in PCB",
+        "btn-more": "More",
+        "btn-download-cv": "Download my CV",
+        "footer-description": "Telecommunications Engineering. RF systems, antenna design and applied research.",
+        "connect": "Connect",
+        "footer-more": "More",
+        "btn-download-cv2": "Download CV",
+        "builtwith": "Built with"
+    }
+}
