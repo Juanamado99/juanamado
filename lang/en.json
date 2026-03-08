@@ -60,7 +60,7 @@
     "dosis": {
         "tab-title": "Juan Amado | DoSis Radar",
         "title":"Patch Antenna Array (DoSis)",
-        "data":"Student Job in Research (KIT) · Team of 5 PhD · 2025 · Antenna Systems in Radar + Integrated Circuit Research Environment",
+        "data":"Research Student Assistant (KIT) · Team of 5 PhD · 2025 · Antenna Systems in Radar + Integrated Circuit Research Environment",
         "context":"Research-oriented multidisciplinary project focused on the design and optimization of a compact patch antenna array with symmetrical input and output ports for radar applications. The work was conducted in collaboration with a PhD research team developing a Doppler-based target auto-processing chip.",
         "problem":"Design a microstrip antenna array under strict physical constraints (fixed PCB height, substrate materials, and predefined chip port widths) capable of:<br> - Radiationg at 45° relative to the radar reference axis<br> - Achieving a minimum gain of 7 dBi<br> - Maintaining inter-port coupling below −30 dB<br> Since the chip port dimensions were fixed, the primary challenge was to ensure proper 50 &Omega; impedance matching for maximum power transfer while minimizing mutual coupling between input and output ports.",
         "contribution":"<li>Full EM modeling and simulation of the antenna array</li> <li>Parametric sweeps and geometry optimization</li> <li>Design and evaluation of decoupling structures</li> <li>Analysis of radiation pattern, impedance matching, gain, bandwidth and coupling performance</li> <li>Iterative refinement of the feed network and array configuration</li>",
