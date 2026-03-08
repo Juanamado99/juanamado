@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Project title</title>
+        <title data-i18n="temp.tab-title">Project title</title>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -51,6 +51,9 @@
         <link rel="stylesheet"
             href="../style/project-page.css"
         />
+
+        <script>const langPath = "../lang/";</script>
+        <script src="../script/i18n.js"></script>
     </head>
 
     <body>
@@ -68,13 +71,22 @@
                 <div class="collapse navbar-collapse" id="navbarlist">
                     <ul class="navbar-nav ml-auto nav-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#hero">About</a>
+                            <a class="nav-link" href="../index.html#hero" data-i18n="home.about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#featured-projects">Projects</a>
+                            <a class="nav-link" href="../index.html#featured-projects" data-i18n="home.projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact" data-i18n="home.contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('en')">EN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('es')">ES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('de')">DE</a>
                         </li>
                     </ul>
                 </div>
@@ -84,8 +96,8 @@
         <!-- HERO -->
         <section class="project-hero">
             <div class="container text-center">
-                <h1 class="project-title">Patch Antenna Array (DoSis)</h1>
-                <p class="project-context">
+                <h1 class="project-title" data-i18n="temp.title">Patch Antenna Array (DoSis)</h1>
+                <p class="project-context" data-i18n="temp.data">
                     Master Course Project · Team of 3 · 2025  
                     Telecommunications Engineering – RF Systems
                 </p>
@@ -96,14 +108,14 @@
             <section class="project-grid">
                 <!-- HERO IMAGE -->
                 <section class="project-image">
-                    <img src="../img/dosis.png" alt="Project visual representation">
+                    <img src="../img/Test.png" alt="Project visual representation">
                 </section>
 
                 <!-- OVERVIEW / CONTEXT -->
                 <section class="project-section context">
                     <div class="container">
-                        <h2 class="section-title">Context</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.context">Context</h2>
+                        <p data-i18n="temp.context">
                             Academic research-oriented project focused on the design and optimization 
                             of a compact patch antenna array for microwave applications.
                         </p>
@@ -113,8 +125,8 @@
                 <!-- PROBLEM -->
                 <section class="project-section engineering-problem">
                     <div class="container">
-                        <h2 class="section-title">Engineering Problem</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.problem">Engineering Problem</h2>
+                        <p data-i18n="temp.problem">
                             Minimize losses and dispersion in compact waveguide structures 
                             suitable for PCB manufacturing while maintaining high radiation efficiency 
                             and controlled impedance matching.
@@ -125,8 +137,8 @@
                 <!-- CONTRIBUTION -->
                 <section class="project-section contribution">
                     <div class="container">
-                        <h2 class="section-title">My Contribution</h2>
-                        <ul class="project-list">
+                        <h2 class="section-title" data-i18n="projects.contribution">My Contribution</h2>
+                        <ul class="project-list" data-i18n="temp.contribution">
                             <li>Electromagnetic modeling and simulation</li>
                             <li>Parameter sweeps and geometry optimization</li>
                             <li>Interpretation of S-parameters and field distributions</li>
@@ -138,8 +150,8 @@
                 <!-- TOOLS -->
                 <section class="project-section tools">
                     <div class="container">
-                        <h2 class="section-title">Tools & Methods</h2>
-                        <div class="tools-grid">
+                        <h2 class="section-title" data-i18n="projects.tools">Tools & Methods</h2>
+                        <div class="tools-grid" data-i18n="temp.tools">
                             <span>CST Studio Suite</span>
                             <span>MATLAB</span>
                             <span>FEM / FDTD</span>
@@ -151,17 +163,17 @@
                 <!-- RESULTS -->
                 <section class="project-section results">
                     <div class="container">
-                        <h2 class="section-title">Results</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.results">Results</h2>
+                        <p data-i18n="temp.results">
                             Achieved 2.3 dB loss reduction compared to reference structure.
                             Improved impedance matching across target band with 
                             S11 below -15 dB.
                         </p>
                     
                         <div class="visual-grid">
-                            <img src="../img/dosis.png" alt="S-parameters plot">
-                            <img src="../img/RF.png" alt="Field distribution">
-                            <img src="../img/vivaldi.png" alt="Radiation pattern">
+                            <img src="../img/Test.png" alt="S-parameters plot">
+                            <img src="../img/Test.png" alt="Field distribution">
+                            <img src="../img/Test.png" alt="Radiation pattern">
                         </div>
                     </div>
                 </section>
@@ -169,8 +181,8 @@
                 <!-- LEARNING -->
                 <section class="project-section learning">
                     <div class="container">
-                        <h2 class="section-title">What I Learned</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.learned">What I Learned</h2>
+                        <p data-i18n="temp.learned">
                             Improved understanding of high-frequency behavior in dielectric structures 
                             and simulation-driven design trade-offs between compactness and efficiency.
                         </p>
@@ -181,7 +193,7 @@
 
         <!-- BACK BUTTON -->
         <section class="project-section text-center">
-            <a href="../index.html#featured-projects" class="btn btn-project">
+            <a href="../index.html#featured-projects" class="btn btn-project" data-i18n="projects.back">
                 ← Back to Projects
             </a>
         </section>
@@ -193,7 +205,7 @@
                     <!-- Identity -->
                     <div class="footer-block">
                         <h5 class="footer-title">Juan Amado</h5>
-                        <p class="footer-text">
+                        <p class="footer-text" data-i18n="home.footer-description">
                             Telecommunications Engineering. RF systems,
                             antenna design and applied research.
                         </p>
@@ -201,7 +213,7 @@
                 
                     <!-- Contact -->
                     <div class="footer-block">
-                        <h6 class="footer-subtitle">Connect</h6>
+                        <h6 class="footer-subtitle" data-i18n="home.connect">Connect</h6>
                         <div class="footer-icons">
                         
                             <a href="mailto:juan1999@movistar.es" aria-label="Email">
@@ -230,11 +242,11 @@
                 
                     <!-- Extras -->
                     <div class="footer-block">
-                        <h6 class="footer-subtitle">More</h6>
+                        <h6 class="footer-subtitle" data-i18n="home.footer-more">More</h6>
                         <ul class="footer-links">
-                            <li><a href="../index.html#hero">About</a></li>
-                            <li><a href="../index.html#featured-projects">Projects</a></li>
-                            <li><a href="../doc/Resume 2026-02 EN.pdf">Download CV</a></li>
+                            <li><a href="../index.html#hero" data-i18n="home.about">About</a></li>
+                            <li><a href="../index.html#featured-projects" data-i18n="home.projects">Projects</a></li>
+                            <li><a href="../doc/Resume 2026-02 EN.pdf" data-i18n="home.btn-download-cv2">Download CV</a></li>
                         </ul>
                     </div>
                 
@@ -243,7 +255,7 @@
                 <div class="footer-bottom">
                     <span>© 2026 Juan Amado</span>
                     <span class="footer-divider">·</span>
-                    <span>Built with</span>
+                    <span data-i18n="home.builtwith">Built with</span>
                     <i class="fab fa-html5" title="HTML5"></i>
                     <i class="fab fa-css3-alt" title="CSS3"></i>
                     <i class="fab fa-js-square" title="JavaScript"></i>

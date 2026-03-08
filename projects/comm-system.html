@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Juan Amado | Communication System</title>
+        <title data-i18n="comm.tab-title">Juan Amado | Communication System</title>
         <link rel="icon" href="../img/favicon.ico">
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -52,6 +52,9 @@
         <link rel="stylesheet"
             href="../style/project-page.css"
         />
+
+        <script>const langPath = "../lang/";</script>
+        <script src="../script/i18n.js"></script>
     </head>
 
     <body>
@@ -69,13 +72,22 @@
                 <div class="collapse navbar-collapse" id="navbarlist">
                     <ul class="navbar-nav ml-auto nav-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#hero">About</a>
+                            <a class="nav-link" href="../index.html#hero" data-i18n="home.about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#featured-projects">Projects</a>
+                            <a class="nav-link" href="../index.html#featured-projects" data-i18n="home.projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact" data-i18n="home.contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('en')">EN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('es')">ES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('de')">DE</a>
                         </li>
                     </ul>
                 </div>
@@ -85,8 +97,8 @@
         <!-- HERO -->
         <section class="project-hero">
             <div class="container text-center">
-                <h1 class="project-title">Digital Communication System Simulation with Noise and BER Analysis</h1>
-                <p class="project-context">
+                <h1 class="project-title" data-i18n="comm.title">Digital Communication System Simulation with Noise and BER Analysis</h1>
+                <p class="project-context" data-i18n="comm.data">
                     Personal Project · Individual · 2024 · 
                     Telecommunications Engineering
                 </p>
@@ -103,8 +115,8 @@
                 <!-- OVERVIEW / CONTEXT -->
                 <section class="project-section context">
                     <div class="container">
-                        <h2 class="section-title">Context</h2>
-                        <p>
+                        <h2 class="section-title"  data-i18n="projects.context">Context</h2>
+                        <p data-i18n="comm.context">
                             Personal project developed to model and analyze a complete baseband digital
                             communication system under noisy channel conditions, reinforcing concepts from
                             Mobile Communications, Radio Receivers, and Signal Transmission Theory. The
@@ -117,8 +129,8 @@
                 <!-- PROBLEM -->
                 <section class="project-section engineering-problem">
                     <div class="container">
-                        <h2 class="section-title">Engineering Problem</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.problem">Engineering Problem</h2>
+                        <p data-i18n="comm.problem">
                             Evaluate the performance of different digital modulation schemes (BPSK, QPSK/PSK,
                             and QAM) under an Additive White Gaussian Noise (AWGN) channel and analyze their
                             impact on Bit Error Rate (BER).<br>
@@ -136,8 +148,8 @@
                 <!-- CONTRIBUTION -->
                 <section class="project-section contribution">
                     <div class="container">
-                        <h2 class="section-title">My Contribution</h2>
-                        <ul class="project-list">
+                        <h2 class="section-title" data-i18n="projects.contribution">My Contribution</h2>
+                        <ul class="project-list" data-i18n="comm.contribution">
                             <li>Designed and implemented a complete transmitter–receiver chain</li>
                             <li>Developed ASCII-to-bit encoding and bitstream management</li>
                             <li>Implemented symbol mapping and demapping for multiple modulation schemes</li>
@@ -151,8 +163,8 @@
                 <!-- TOOLS -->
                 <section class="project-section tools">
                     <div class="container">
-                        <h2 class="section-title">Tools & Methods</h2>
-                        <div class="tools-grid">
+                        <h2 class="section-title" data-i18n="projects.tools">Tools & Methods</h2>
+                        <div class="tools-grid" data-i18n="comm.tools">
                             <span>MATLAB</span>
                             <span>Digital modulation theory (BPSK, PSK, QAM)</span>
                             <span>AWGN channel modeling</span>
@@ -164,8 +176,8 @@
                 <!-- RESULTS -->
                 <section class="project-section results">
                     <div class="container">
-                        <h2 class="section-title">Results</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.results">Results</h2>
+                        <p data-i18n="comm.results">
                            Generated BER vs SNR curves for multiple modulation schemes. 
                            Verified expected theoretical trends (higher-order QAM more spectrally efficient but less noise-robust).
                            Successfully reconstructed transmitted messages under different SNR conditions.
@@ -183,8 +195,8 @@
                 <!-- LEARNING -->
                 <section class="project-section learning">
                     <div class="container">
-                        <h2 class="section-title">What I Learned</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.learned">What I Learned</h2>
+                        <p data-i18n="comm.learned">
                             Strengthened practical intuition on modulation trade-offs, spectral efficiency, and noise
                             sensitivity. Gained hands-on experience in implementing a complete digital communication
                             chain and evaluating system-level performance under stochastic channel conditions.
@@ -196,7 +208,7 @@
 
         <!-- BACK BUTTON -->
         <section class="project-section text-center">
-            <a href="../index.html#featured-projects" class="btn btn-project">
+            <a href="../index.html#featured-projects" class="btn btn-project" data-i18n="projects.back">
                 ← Back to Projects
             </a>
         </section>
@@ -208,7 +220,7 @@
                     <!-- Identity -->
                     <div class="footer-block">
                         <h5 class="footer-title">Juan Amado</h5>
-                        <p class="footer-text">
+                        <p class="footer-text" data-i18n="home.footer-description">
                             Telecommunications Engineering. RF systems,
                             antenna design and applied research.
                         </p>
@@ -216,7 +228,7 @@
                 
                     <!-- Contact -->
                     <div class="footer-block">
-                        <h6 class="footer-subtitle">Connect</h6>
+                        <h6 class="footer-subtitle" data-i18n="home.connect">Connect</h6>
                         <div class="footer-icons">
                         
                             <a href="mailto:juan1999@movistar.es" aria-label="Email">
@@ -245,11 +257,11 @@
                 
                     <!-- Extras -->
                     <div class="footer-block">
-                        <h6 class="footer-subtitle">More</h6>
+                        <h6 class="footer-subtitle" data-i18n="home.footer-more">More</h6>
                         <ul class="footer-links">
-                            <li><a href="../index.html#hero">About</a></li>
-                            <li><a href="../index.html#featured-projects">Projects</a></li>
-                            <li><a href="../doc/Resume 2026-02 EN.pdf">Download CV</a></li>
+                            <li><a href="../index.html#hero" data-i18n="home.about">About</a></li>
+                            <li><a href="../index.html#featured-projects" data-i18n="home.projects">Projects</a></li>
+                            <li><a href="../doc/Resume 2026-02 EN.pdf" data-i18n="home.btn-download-cv2">Download CV</a></li>
                         </ul>
                     </div>
                 
@@ -258,7 +270,7 @@
                 <div class="footer-bottom">
                     <span>© 2026 Juan Amado</span>
                     <span class="footer-divider">·</span>
-                    <span>Built with</span>
+                    <span data-i18n="home.builtwith">Built with</span>
                     <i class="fab fa-html5" title="HTML5"></i>
                     <i class="fab fa-css3-alt" title="CSS3"></i>
                     <i class="fab fa-js-square" title="JavaScript"></i>

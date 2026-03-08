@@ -50,9 +50,12 @@
             href="./style/hero.css"
         />
 
-        
+
+        <script>const langPath = "./lang/";</script>
+        <script src="./script/i18n.js"></script>
         <script src="./script/on_intersecting.js" defer></script>
         <script src="./script/scroll.js" defer></script>
+        
         
     </head>
 
@@ -71,13 +74,22 @@
                 <div class="collapse navbar-collapse" id="navbarlist">
                     <ul class="navbar-nav ml-auto nav-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="#hero">About</a>
+                            <a class="nav-link" href="#hero" data-i18n="home.about">About Prueba de que esto no se ve</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#featured-projects">Projects</a>
+                            <a class="nav-link" href="#featured-projects" data-i18n="home.projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact" data-i18n="home.contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('en')">EN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('es')">ES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadLanguage('de')">DE</a>
                         </li>
                     </ul>
                 </div>
@@ -89,13 +101,13 @@
                 <div class="wrapper bg-dark">
                     <div class="sticky-container">
                         <h1 class="hero-title">JUAN AMADO</h1>
-                        <h2 class="hero-subtitle fade-block preload onscreen" id="subtitle1">Discover a unique mindset</h2>
-                        <p class="fade-block lead preload">Welcome! I&apos;m Juan.</p>
-                        <p class="fade-block lead preload">
+                        <h2 class="hero-subtitle fade-block preload onscreen" id="subtitle1" data-i18n="home.subtitle">Discover a unique mindset</h2>
+                        <p class="fade-block lead preload" data-i18n="home.description1">Welcome! I&apos;m Juan.</p>
+                        <p class="fade-block lead preload" data-i18n="home.description2">
                             Telecommunications Engineering student with experience in antenna design,
                             microwave simulations and signal processing.
                         </p>
-                        <p class="fade-block lead preload">
+                        <p class="fade-block lead preload" data-i18n="home.description3">
                             I enjoy structured problem-solving and translating theory into practical systems,
                             with interest in RF, space communications, and emerging technologies.
                         </p>
@@ -120,25 +132,25 @@
                 <div class="carousel-item active">
                     <img src="./img/RF.png" class="d-block w-100">
                     <div class="carousel-caption d-md-block">
-                        <h5 class="text-dark">Antenna design & simulation</h5>
+                        <h5 class="text-dark" data-i18n="home.interest1">Antenna design & simulation</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/rf_systems.png" class="d-block w-100">
                     <div class="carousel-caption d-md-block">
-                        <h5 class="text-dark">RF Systems</h5>
+                        <h5 class="text-dark" data-i18n="home.interest2">RF Systems</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/sp_and_comms.png" class="d-block w-100">
                     <div class="carousel-caption d-md-block">
-                        <h5>Signal processing & comms</h5>
+                        <h5 data-i18n="home.interest3">Signal processing & comms</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/research1.png" class="d-block w-100">
                     <div class="carousel-caption d-md-block">
-                        <h5 class="text-dark">Research-oriented mindset</h5>
+                        <h5 class="text-dark" data-i18n="home.interest4">Research-oriented mindset</h5>
                     </div>
                 </div>
             </div>
@@ -155,8 +167,8 @@
         <section id="featured-projects" class="projects-section">
             <section class="jumbotron text-center">
                 <div class="container">
-                    <h1 class="jumbotron-heading">Projects</h1>
-                    <p class="lead text-muted">Here are some of my main achievements</p>
+                    <h1 class="jumbotron-heading" data-i18n="home.projects">Projects</h1>
+                    <p class="lead text-muted" data-i18n="home.projects-subtitle">Here are some of my main achievements</p>
                 </div>
             </section>
             <div class="album py-2 bg-light">
@@ -166,10 +178,10 @@
                             <div class="card project-card shadow-sm h-100">
                                 <img src="./img/dosis.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Patch Antenna Array (DoSis)</p>
+                                    <p class="card-text" data-i18n="home.project1">Patch Antenna Array (DoSis)</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./projects/dosis.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary">More</button></a>
+                                            <a href="./projects/dosis.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary" data-i18n="home.btn-more">More</button></a>
                                         </div>
                                         <small class="text-muted">2025</small>
                                     </div>
@@ -180,10 +192,10 @@
                             <div class="card project-card shadow-sm h-100">
                                 <img src="./img/real_microstrip_1.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Dielectric Waveguide Transition in PCB</p>
+                                    <p class="card-text" data-i18n="home.project5">Dielectric Waveguide Transition in PCB</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./projects/dielectric-waveguide.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary">More</button></a>
+                                            <a href="./projects/dielectric-waveguide.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary" data-i18n="home.btn-more">More</button></a>
                                         </div>
                                         <small class="text-muted">2025</small>
                                     </div>
@@ -194,10 +206,10 @@
                             <div class="card project-card shadow-sm h-100">
                                 <img src="./img/sar.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Synthetic Aperture Radar (SAR) Simulation</p>
+                                    <p class="card-text" data-i18n="home.proejct3">Synthetic Aperture Radar (SAR) Simulation</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./projects/sar.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary">More</button></a>
+                                            <a href="./projects/sar.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary" data-i18n="home.btn-more">More</button></a>
                                         </div>
                                         <small class="text-muted">2025</small>
                                     </div>
@@ -208,10 +220,10 @@
                             <div class="card project-card shadow-sm h-100">
                                 <img src="./img/vivaldi.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Vivaldi, Circular Patch and Can Antenna</p>
+                                    <p class="card-text" data-i18n="home.project2">Vivaldi, Circular Patch and Can Antenna</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./projects/vivaldi.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary">More</button></a>
+                                            <a href="./projects/vivaldi.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary" data-i18n="home.btn-more">More</button></a>
                                         </div>
                                         <small class="text-muted">2024</small>
                                     </div>
@@ -222,10 +234,10 @@
                             <div class="card project-card shadow-sm h-100">
                                 <img src="./img/commSystem.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Communication System Simulation</p>
+                                    <p class="card-text" data-i18n="home.project4">Communication System Simulation</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./projects/comm-system.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary">More</button></a>
+                                            <a href="./projects/comm-system.html" class="link"><button type="button" class="btn btn-sm btn-outline-secondary" data-i18n="home.btn-more">More</button></a>
                                         </div>
                                         <small class="text-muted">2024</small>
                                     </div>
@@ -238,7 +250,7 @@
             <section class="jumbotron text-center">
                 <div class="container">
                     <p>
-                        <a href="./doc/Resume 2026-02 EN.pdf" class="btn btn-important btn-project my-2">Download my CV</a>
+                        <a href="./doc/Resume 2026-02 EN.pdf" class="btn btn-important btn-project my-2" data-i18n="home.btn-download-cv">Download my CV</a>
                     </p>
                 </div>
             </section>
@@ -251,7 +263,7 @@
                     <!-- Identity -->
                     <div class="footer-block">
                         <h5 class="footer-title">Juan Amado</h5>
-                        <p class="footer-text">
+                        <p class="footer-text" data-i18n="home.footer-description">
                             Telecommunications Engineering. RF systems,
                             antenna design and applied research.
                         </p>
@@ -259,7 +271,7 @@
                 
                     <!-- Contact -->
                     <div class="footer-block">
-                        <h6 class="footer-subtitle">Connect</h6>
+                        <h6 class="footer-subtitle" data-i18n="home.connect">Connect</h6>
                         <div class="footer-icons">
                         
                             <a href="mailto:juan1999@movistar.es" aria-label="Email">
@@ -288,11 +300,11 @@
                 
                     <!-- Extras -->
                     <div class="footer-block">
-                        <h6 class="footer-subtitle">More</h6>
+                        <h6 class="footer-subtitle" data-i18n="home.footer-more">More</h6>
                         <ul class="footer-links">
-                            <li><a href="#hero">About</a></li>
-                            <li><a href="#featured-projects">Projects</a></li>
-                            <li><a href="./doc/Resume 2026-02 EN.pdf">Download CV</a></li>
+                            <li><a href="#hero" data-i18n="home.about">About</a></li>
+                            <li><a href="#featured-projects" data-i18n="home.projects">Projects</a></li>
+                            <li><a href="./doc/Resume 2026-02 EN.pdf" data-i18n="home.btn-download-cv2">Download CV</a></li>
                         </ul>
                     </div>
                 
@@ -301,7 +313,7 @@
                 <div class="footer-bottom">
                     <span>© 2026 Juan Amado</span>
                     <span class="footer-divider">·</span>
-                    <span>Built with</span>
+                    <span data-i18n="home.builtwith">Built with</span>
                     <i class="fab fa-html5" title="HTML5"></i>
                     <i class="fab fa-css3-alt" title="CSS3"></i>
                     <i class="fab fa-js-square" title="JavaScript"></i>

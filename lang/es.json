@@ -1,0 +1,105 @@
+{
+    "home": {
+        "about": "Sobre mí",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "subtitle": "Descubre una mentalidad única",
+        "description1":"¡Bienvenido! Soy Juan",
+        "description2":"Estudiante en ingeniería de telecomunicaciones con experiencia en diseño de antenas, simulación de microondas (EM) y tratamiento de señales.",
+        "description3":"Disfruto de la resolución estructurada de problemas y su aplicación en sistemas reales, con interés en RF, comunicaciones espaciales y tecnologías emergentes.",
+        "btn-discover":"Descrubre mis proyectos",
+        "interest1": "Simulación y diseño de antenas",
+        "interest2": "Sistemas RF",
+        "interest3": "Tratamiento de señales y comunicaciones",
+        "interest4": "Foco en investigación",
+        "projects-subtitle": "Aquí algunos de mis logros",
+        "project1": "Array de antenas patch (DoSis)",
+        "project2": "Antenas vivaldi, patch circular y cilíndrica",
+        "project3": "Simulación de Radar de Apertura Sintético (SAR)",
+        "project4": "Simulación de sistemas de comunicaciones",
+        "project5": "Transición guiaonda dieléctrica a PCB",
+        "btn-more": "Ver más",
+        "btn-download-cv": "Descarga mi CV",
+        "footer-description": "Ingeniero de telecomunicaciones. Sistemas RF, diseño de antenas e investigación aplicada.",
+        "connect": "Contacto",
+        "footer-more": "Otros",
+        "btn-download-cv2": "Descarga mi CV",
+        "builtwith": "Desarrollado con"
+    },
+    "projects": {
+        "context":"Contexto",
+        "problem":"Problema de Ingeniería",
+        "contribution": "Mi Aportación",
+        "tools":"Métodos y Herramientas",
+        "results":"Resultados",
+        "learned":"Qué he aprendido",
+        "back":"Volver a proyectos"
+    },
+
+    "comm": {
+        "tab-title": "Juan Amado | Sistema de Comunicación",
+        "title": "Simulación de un Sistema de Comunicación Digital con Ruido y Análisis de BER",
+        "data": "Proyecto Personal · Individual · 2024 · Ingeniería de Telecomunicaciones",
+        "context": "Proyecto personal desarrollado para modelar y analizar un sistema completo de comunicación digital en banda base bajo condiciones de canal ruidoso, reforzando conceptos de Comunicaciones Móviles, Receptores de Radio y Teoría de Transmisión de Señales. El proyecto incluyó el procesamiento completo desde la codificación del mensaje hasta la recepción y decodificación.",
+        "problem": "Evaluar el rendimiento de distintos esquemas de modulación digital (BPSK, QPSK/PSK y QAM) bajo un canal con Ruido Blanco Gaussiano Aditivo (AWGN) y analizar su impacto en la Tasa de Error de Bit (BER).<br> El sistema fue diseñado para implementar toda la cadena de transmisión:<br> - Conversión de un mensaje legible por humanos (ASCII) a binario<br> - Agrupación de bits y mapeo a símbolos<br> - Modulación digital<br> - Transmisión a través de un canal AWGN<br> - Demodulación y decodificación<br> - Cálculo de BER y reconstrucción del mensaje",
+        "contribution": "<li>Diseño e implementación de una cadena completa transmisor–receptor</li> <li>Desarrollo de codificación ASCII a bits y gestión del flujo binario</li> <li>Implementación de mapeo y demapeo de símbolos para múltiples esquemas de modulación</li> <li>Modelado de un canal AWGN</li> <li>Cálculo de curvas de rendimiento BER vs SNR</li> <li>Comparación entre eficiencia espectral y robustez frente al ruido</li>",
+        "tools": "<span>MATLAB</span> <span>Teoría de modulación digital (BPSK, PSK, QAM)</span> <span>Modelado de canal AWGN</span> <span>Estimación estadística de BER</span>",
+        "results": "Se generaron curvas BER vs SNR para varios esquemas de modulación. Se verificaron las tendencias teóricas esperadas (QAM de orden superior más eficiente espectralmente pero menos robusto frente al ruido). Se logró reconstruir correctamente los mensajes transmitidos bajo distintas condiciones de SNR. Se identificaron posibles mejoras del sistema como la incorporación de mecanismos de detección de errores (por ejemplo, paridad o CRC).",
+        "learned": "Se reforzó la intuición práctica sobre los compromisos entre modulación, eficiencia espectral y sensibilidad al ruido. Se adquirió experiencia práctica en la implementación de una cadena completa de comunicación digital y en la evaluación del rendimiento del sistema bajo condiciones de canal estocásticas."
+    },
+    "diel": {
+        "tab-title": "Juan Amado | Transición Dieléctrica",
+        "title": "Diseño y Optimización de Estructuras y Transiciones de Guías de Onda Dieléctricas en PCB",
+        "data": "Trabajo Fin de Grado · Supervisado por Mario Faliero · 2025 · Sistemas RF",
+        "context": "Trabajo Fin de Grado desarrollado en colaboración con un equipo de investigación doctoral, centrado en el diseño electromagnético, fabricación y validación de líneas de transmisión dieléctricas y transiciones compatibles con fabricación en PCB. El proyecto incluyó responsabilidad completa de diseño y defensa formal del trabajo.",
+        "problem": "Diseñar, simular y fabricar estructuras de guías de onda dieléctricas de baja pérdida adecuadas para integración en PCB, garantizando:<br> - Pérdidas de inserción mínimas<br> - Buen ajuste de impedancia<br> - Transiciones eficientes y suaves entre estructuras de guiado<br> - Rendimiento estable en las bandas K y Ka (21–30 GHz)<br> Un desafío clave fue lograr transiciones robustas entre guías dieléctricas y estructuras de guía de onda convencionales manteniendo estabilidad mecánica y baja pérdida de retorno a altas frecuencias.",
+        "contribution": "<li>Modelado y simulación electromagnética full-wave</li> <li>Barridos paramétricos y optimización geométrica</li> <li>Diseño de 3 estructuras de guiado dieléctrico</li> <li>Diseño y ajuste de 6 transiciones entre estructuras</li> <li>Análisis de parámetros S y distribuciones de campo</li> <li>Preparación del layout PCB para fabricación</li> <li>Fabricación física y validación experimental</li>",
+        "tools": "<span>CST Studio Suite</span> <span>MATLAB</span> <span>VNA (Analizador de Redes Vectorial)</span> <span>Herramientas de diseño de layout PCB</span>",
+        "results": "Se lograron bajas pérdidas de inserción y pérdidas de retorno aceptables dentro de la banda objetivo K/Ka (21–30 GHz). Se demostró una solución de guiado dieléctrico compatible con fabricación en PCB. Se validó el rendimiento de las transiciones con un ajuste de impedancia consistente. Se identificó la necesidad de una transición dieléctrico–guía de onda más robusta mecánicamente para reducir aún más la pérdida de retorno y mejorar la estabilidad estructural.",
+        "learned": "Se desarrolló una fuerte experiencia en propagación dieléctrica de alta frecuencia, ingeniería de transiciones y optimización basada en simulación bajo restricciones de fabricación. Se adquirió una perspectiva más amplia a nivel de sistema considerando robustez mecánica, fabricabilidad y eficiencia de transmisión para aplicaciones reales como comunicaciones móviles y sistemas satelitales."
+    },
+    "dosis": {
+        "tab-title": "Juan Amado | Radar DoSis",
+        "title": "Array de Antenas Patch (DoSis)",
+        "data": "Trabajo de Investigación como Estudiante (KIT) · Equipo de 5 PhD · 2025 · Sistemas de Antenas para Radar + Entorno de Investigación en Circuitos Integrados",
+        "context": "Proyecto multidisciplinar orientado a investigación centrado en el diseño y optimización de un array compacto de antenas patch con puertos de entrada y salida simétricos para aplicaciones radar. El trabajo se realizó en colaboración con un equipo de doctorado que desarrollaba un chip de auto-procesamiento de objetivos basado en efecto Doppler.",
+        "problem": "Diseñar un array de antenas microstrip bajo estrictas restricciones físicas (altura de PCB fija, materiales de sustrato y anchuras de puerto del chip predefinidas) capaz de:<br> - Radiar a 45° respecto al eje de referencia del radar<br> - Alcanzar una ganancia mínima de 7 dBi<br> - Mantener acoplamiento entre puertos inferior a −30 dB<br> Dado que las dimensiones del puerto del chip estaban fijadas, el principal desafío fue asegurar un correcto ajuste de impedancia de 50 &Omega; para máxima transferencia de potencia minimizando al mismo tiempo el acoplamiento mutuo entre puertos de entrada y salida.",
+        "contribution": "<li>Modelado y simulación electromagnética completa del array de antenas</li> <li>Barridos paramétricos y optimización geométrica</li> <li>Diseño y evaluación de estructuras de desacoplo</li> <li>Análisis de patrón de radiación, ajuste de impedancia, ganancia, ancho de banda y acoplamiento</li> <li>Refinamiento iterativo de la red de alimentación y configuración del array</li>",
+        "tools": "<span>CST Studio Suite (simulación FEM full-wave)</span> <span>Calculadora analítica de impedancia de líneas microstrip</span> <span>Libro: Antenna Theory - Balanis</span> <span>Libro: Microwave Engineering - Pozar</span>",
+        "results": "Se alcanzó una ganancia de 11.5 dBi (superando el objetivo de 7 dBi). Se redujo S21 (acoplamiento entre puertos) a -20 dB (aún se requieren 10 dB adicionales para cumplir la especificación). Se mejoró el ajuste de impedancia mediante una implementación de PCB de doble capa. Se validaron las características de radiación y la distribución de campos mediante simulación electromagnética completa.",
+        "learned": "Se desarrolló una comprensión más profunda del comportamiento de arrays microstrip, diseño de redes de alimentación y técnicas de mitigación de acoplamiento. Se reforzó la experiencia práctica en optimización basada en CST y diseño de antenas de alta frecuencia bajo restricciones de PCB."
+    },
+    "sar": {
+        "tab-title": "Juan Amado | SAR",
+        "title": "Simulación y Reconstrucción de Objetivos mediante Radar de Apertura Sintética (SAR)",
+        "data": "Proyecto Personal · Individual · 2025 · Sistemas Radar Espaciales",
+        "context": "Proyecto personal de simulación en MATLAB desarrollado para profundizar en los conceptos teóricos de las asignaturas Radar Systems Engineering y Spaceborne Radar Remote Sensing. El proyecto se centró en el modelado de la generación de señales SAR y la reconstrucción de objetivos desde principios fundamentales.",
+        "problem": "Simular el eco radar de un objetivo puntual utilizando formas de onda chirp y reconstruir la imagen del objetivo mediante filtrado adaptado y procesamiento basado en convolución. Los principales desafíos incluyeron:<br> - Modelar con precisión la respuesta del objetivo puntual en función de la distancia<br> - Incorporar el movimiento de la plataforma radar y sus efectos Doppler<br> - Considerar la variación de potencia recibida con el ángulo de azimut<br> - Lograr una compresión adecuada en rango y azimut",
+        "contribution": "<li>Modelado de la forma de onda chirp FM lineal transmitida</li> <li>Simulación de la reflexión del objetivo considerando retardo de propagación y movimiento</li> <li>Implementación de filtrado adaptado mediante convolución</li> <li>Compresión en rango</li> <li>Procesamiento en azimut y análisis de limitaciones de resolución</li> <li>Evaluación de compromisos entre resolución en rango y azimut</li>",
+        "tools": "<span>MATLAB</span> <span>Modelado de señales FM lineales</span> <span>Filtrado adaptado</span> <span>Algoritmos de compresión en rango y azimut</span> <span>SAR</span>",
+        "results": "Compresión en rango exitosa mediante filtrado adaptado. Reconstrucción parcial en azimut lograda. Se identificó degradación de resolución debida al modelado del movimiento y aproximaciones Doppler. Se evaluó la sensibilidad de la resolución en azimut frente a supuestos de velocidad de la plataforma.",
+        "learned": "Se desarrolló una comprensión más profunda de los fundamentos del procesamiento de señal SAR, particularmente el papel del procesamiento Doppler y el modelado del movimiento en la resolución en azimut. Se obtuvo una visión práctica de la sensibilidad de la reconstrucción SAR frente a las hipótesis de modelado."
+    },
+    "vivaldi": {
+        "tab-title": "Juan Amado | Antenas",
+        "title": "Diseño de Antenas: Vivaldi, Patch Circular y Antena Can",
+        "data": "Workshop · Individual · 2024 · Simulación y Diseño de Antenas",
+        "context": "Proyecto de workshop dentro de la asignatura Antennas and Antenna Arrays, centrado en el diseño, simulación, fabricación y medida de antenas de banda ancha y microstrip operando a 2.4 GHz. El proyecto incluyó parametrización y optimización de antenas Vivaldi, patch circular y guía de onda cilíndrica (“can”) usando CST Studio Suite, seguido de simulación de arrays en MATLAB y validación experimental mediante fabricación y medidas reales.",
+        "problem": "Diseñar antenas que operen en su modo dominante con patrones de radiación estables y rendimiento eficiente en la banda ISM de 2.4 GHz, garantizando un correcto ajuste de impedancia de 50 &Omega;.<br> El principal desafío fue seleccionar y optimizar múltiples parámetros geométricos (radio del patch, diámetro de la guía de onda, longitud del taper, posición del feed) para maximizar ganancia y ancho de banda manteniendo al mismo tiempo el ajuste de impedancia y estabilidad del patrón de radiación.",
+        "contribution": "<li>Parametrización geométrica mediante barridos de parámetros</li> <li>Optimización de dimensiones de antena para resonancia y ganancia</li> <li>Análisis de beamwidth y distribución de campos para elementos individuales y arrays</li> <li>Simulación de arrays de antenas en MATLAB</li> <li>Fabricación de diseños seleccionados</li> <li>Medición y validación en cámara anecoica</li> <li>Comparación entre parámetros S y patrones de radiación simulados y medidos</li>",
+        "tools": "<span>CST Studio Suite</span> <span>MATLAB</span> <span>Modelado analítico de antenas</span> <span>Analizador de Redes Vectorial (VNA)</span> <span>Medidas en cámara anecoica</span>",
+        "results": "Se logró resonancia a 2.4 GHz tanto en simulación como en prototipos fabricados. Se obtuvieron pérdidas de retorno aceptables y buena eficiencia de radiación. Se consiguió un buen ajuste de impedancia de banda ancha en el diseño Vivaldi. Se midieron patrones de radiación, ganancia y parámetros S con buena concordancia entre simulación y resultados experimentales.",
+        "learned": "Se desarrolló una comprensión práctica del comportamiento de antenas resonantes y de banda ancha, incluyendo el impacto de la geometría en el ancho de banda, ganancia y ajuste de impedancia. Se reforzó el conocimiento sobre modos dominantes y mecanismos de radiación basados en cavidad, además de adquirir experiencia práctica sobre cómo la calidad de fabricación influye en las pérdidas de retorno y la precisión de las medidas."
+    },
+    "temp": {
+        "tab-title": "Juan Amado | Título",
+        "title": "Título del Proyecto",
+        "data": "Descripción del proyecto",
+        "context": "Explicación del contexto",
+        "problem": "Planteamiento del problema",
+        "contribution": "Lista de contribuciones: <li>Elemento de lista</li>",
+        "tools": "<span>Herramienta</span>",
+        "results": "Resultados obtenidos",
+        "learned": "Aprendizajes adquiridos"
+    }
+}
