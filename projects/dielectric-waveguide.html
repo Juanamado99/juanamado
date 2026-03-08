@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Juan Amado | Dielectric Transition</title>
+        <title data-i18n="diel.tab-title">Juan Amado | Dielectric Transition</title>
         <link rel="icon" href="../img/favicon.ico">
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -53,7 +53,8 @@
             href="../style/project-page.css"
         />
 
-        <script src="./script/i18n.js"></script>
+        <script>const langPath = "../lang/";</script>
+        <script src="../script/i18n.js"></script>
     </head>
 
     <body>
@@ -71,13 +72,13 @@
                 <div class="collapse navbar-collapse" id="navbarlist">
                     <ul class="navbar-nav ml-auto nav-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#hero">About</a>
+                            <a class="nav-link" href="../index.html#hero" data-i18n="home.about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#featured-projects">Projects</a>
+                            <a class="nav-link" href="../index.html#featured-projects" data-i18n="home.projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact" data-i18n="home.contact">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" onclick="loadLanguage('en')">EN</a>
@@ -96,8 +97,8 @@
         <!-- HERO -->
         <section class="project-hero">
             <div class="container text-center">
-                <h1 class="project-title">Design and Optimization of Dielectric Waveguide Structures and Transitions in PCB</h1>
-                <p class="project-context">
+                <h1 class="project-title" data-i18n="diel.title">Design and Optimization of Dielectric Waveguide Structures and Transitions in PCB</h1>
+                <p class="project-context" data-i18n="diel.data">
                     Bachelor's Thesis · Supervised by Mario Faliero · 2025 ·  
                     RF Systems
                 </p>
@@ -114,8 +115,8 @@
                 <!-- OVERVIEW / CONTEXT -->
                 <section class="project-section context">
                     <div class="container">
-                        <h2 class="section-title">Context</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.context">Context</h2>
+                        <p data-i18n="diel.context">
                             Bachelor&apos;s thesis developed in collaboration with a doctoral research team, focused
                             on the electromagnetic design, fabrication and validation of dielectric transmission lines
                             and transitions compatible with PCB manufacturing. The project included full design ownership
@@ -127,8 +128,8 @@
                 <!-- PROBLEM -->
                 <section class="project-section engineering-problem">
                     <div class="container">
-                        <h2 class="section-title">Engineering Problem</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.problem">Engineering Problem</h2>
+                        <p data-i18n="diel.problem">
                             Design, simulate, and fabricate low-loss dielectric waveguide structures suitable for
                             PCB integration, ensuring: <br>
                             - Minimal insertion loss<br>
@@ -145,8 +146,8 @@
                 <!-- CONTRIBUTION -->
                 <section class="project-section contribution">
                     <div class="container">
-                        <h2 class="section-title">My Contribution</h2>
-                        <ul class="project-list">
+                        <h2 class="section-title" data-i18n="projects.contribution">My Contribution</h2>
+                        <ul class="project-list" data-i18n="diel.contribution">
                             <li>Full-wave EM modeling and simulation</li>
                             <li>Parametric sweeps and geometry optimization</li>
                             <li>Design of 3 dielectric guiding structures</li>
@@ -161,8 +162,8 @@
                 <!-- TOOLS -->
                 <section class="project-section tools">
                     <div class="container">
-                        <h2 class="section-title">Tools & Methods</h2>
-                        <div class="tools-grid">
+                        <h2 class="section-title" data-i18n="projects.tools">Tools & Methods</h2>
+                        <div class="tools-grid" data-i18n="diel.tools">
                             <span>CST Studio Suite</span>
                             <span>MATLAB</span>
                             <span>VNA (Vector Network Analyser)</span>
@@ -174,8 +175,8 @@
                 <!-- RESULTS -->
                 <section class="project-section results">
                     <div class="container">
-                        <h2 class="section-title">Results</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.results">Results</h2>
+                        <p data-i18n="diel.results">
                             Achieved low insertion loss and acceptable return loss within target frequency K/Ka
                             band (21-30GHz).
                             Demonstrated manufacturable PCB-compatible dielectric guiding solution.
@@ -197,8 +198,8 @@
                 <!-- LEARNING -->
                 <section class="project-section learning">
                     <div class="container">
-                        <h2 class="section-title">What I Learned</h2>
-                        <p>
+                        <h2 class="section-title" data-i18n="projects.learned">What I Learned</h2>
+                        <p data-i18n="diel.learned">
                             Developed strong expertise in high-frequency dielectric propagation, transition engineering 
                             and simulation-driven optimization under fabrication constraints. Gained a broader
                             system-level perspective by considering mechanical robustness, manufacturability, and
@@ -212,7 +213,7 @@
 
         <!-- BACK BUTTON -->
         <section class="project-section text-center">
-            <a href="../index.html#featured-projects" class="btn btn-project">
+            <a href="../index.html#featured-projects" class="btn btn-project" data-i18n="projects.back">
                 ← Back to Projects
             </a>
         </section>
@@ -224,7 +225,7 @@
                     <!-- Identity -->
                     <div class="footer-block">
                         <h5 class="footer-title">Juan Amado</h5>
-                        <p class="footer-text">
+                        <p class="footer-text" data-i18n="home.footer-description">
                             Telecommunications Engineering. RF systems,
                             antenna design and applied research.
                         </p>
@@ -232,7 +233,7 @@
                 
                     <!-- Contact -->
                     <div class="footer-block">
-                        <h6 class="footer-subtitle">Connect</h6>
+                        <h6 class="footer-subtitle" data-i18n="home.connect">Connect</h6>
                         <div class="footer-icons">
                         
                             <a href="mailto:juan1999@movistar.es" aria-label="Email">
@@ -261,11 +262,11 @@
                 
                     <!-- Extras -->
                     <div class="footer-block">
-                        <h6 class="footer-subtitle">More</h6>
+                        <h6 class="footer-subtitle" data-i18n="home.footer-more">More</h6>
                         <ul class="footer-links">
-                            <li><a href="../index.html#hero">About</a></li>
-                            <li><a href="../index.html#featured-projects">Projects</a></li>
-                            <li><a href="../doc/Resume 2026-02 EN.pdf">Download CV</a></li>
+                            <li><a href="../index.html#hero" data-i18n="home.about">About</a></li>
+                            <li><a href="../index.html#featured-projects" data-i18n="home.projects">Projects</a></li>
+                            <li><a href="../doc/Resume 2026-02 EN.pdf" data-i18n="home.btn-download-cv2">Download CV</a></li>
                         </ul>
                     </div>
                 
@@ -274,7 +275,7 @@
                 <div class="footer-bottom">
                     <span>© 2026 Juan Amado</span>
                     <span class="footer-divider">·</span>
-                    <span>Built with</span>
+                    <span data-i18n="home.builtwith">Built with</span>
                     <i class="fab fa-html5" title="HTML5"></i>
                     <i class="fab fa-css3-alt" title="CSS3"></i>
                     <i class="fab fa-js-square" title="JavaScript"></i>

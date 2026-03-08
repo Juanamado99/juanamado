@@ -1,0 +1,105 @@
+{
+    "home": {
+        "about": "Über mich",
+        "projects": "Projekte",
+        "contact": "Kontakt",
+        "subtitle": "Entdecke eine besondere Denkweise",
+        "description1": "Willkommen! Ich bin Juan.",
+        "description2": "Student der Nachrichtentechnik mit Erfahrung in Antennendesign, Mikrowellensimulationen und Signalverarbeitung.",
+        "description3": "Ich arbeite gerne strukturiert an Problemen und überführe Theorie in praktische Systeme, mit besonderem Interesse an RF-Technik, Raumfahrtkommunikation und neuen Technologien.",
+        "btn-discover": "Projekte entdecken",
+        "interest1": "Antennendesign & Simulation",
+        "interest2": "RF-Systeme",
+        "interest3": "Signalverarbeitung & Kommunikation",
+        "interest4": "Forschungsorientierte Denkweise",
+        "projects-subtitle": "Hier sind einige meiner wichtigsten Projekte",
+        "project1": "Patch-Antennenarray (DoSis)",
+        "project2": "Vivaldi-, Circular-Patch- und Can-Antenne",
+        "project3": "Simulation eines Synthetic Aperture Radar (SAR)",
+        "project4": "Simulation eines Kommunikationssystems",
+        "project5": "Dielektrischer Wellenleiterübergang in PCB",
+        "btn-more": "Mehr",
+        "btn-download-cv": "Lebenslauf herunterladen",
+        "footer-description": "Nachrichtentechnik. RF-Systeme, Antennendesign und angewandte Forschung.",
+        "connect": "Verbinden",
+        "footer-more": "Mehr",
+        "btn-download-cv2": "Lebenslauf herunterladen",
+        "builtwith": "Erstellt mit"
+    },
+    "projects": {
+        "context": "Kontext",
+        "problem": "Ingenieurproblem",
+        "contribution": "Mein Beitrag",
+        "tools": "Werkzeuge & Methoden",
+        "results": "Ergebnisse",
+        "learned": "Was ich gelernt habe",
+        "back": "Zurück zu den Projekten"
+    },
+
+    "comm": {
+        "tab-title": "Juan Amado | Kommunikationssystem",
+        "title": "Simulation eines digitalen Kommunikationssystems mit Rauschen und BER-Analyse",
+        "data": "Persönliches Projekt · Individuell · 2024 · Nachrichtentechnik",
+        "context": "Persönliches Projekt zur Modellierung und Analyse eines vollständigen digitalen Basisband-Kommunikationssystems unter verrauschten Kanalbedingungen. Ziel war es, Konzepte aus Mobile Communications, Radio Receivers und Signal Transmission Theory praktisch zu vertiefen. Das Projekt umfasste die vollständige Verarbeitungskette von der Nachrichtenkodierung bis zur Dekodierung beim Empfang.",
+        "problem": "Bewertung der Leistung verschiedener digitaler Modulationsverfahren (BPSK, QPSK/PSK und QAM) unter einem Additive White Gaussian Noise (AWGN)-Kanal und Analyse ihres Einflusses auf die Bitfehlerrate (BER).<br> Das System implementierte die vollständige Übertragungskette:<br> - Umwandlung einer menschenlesbaren Nachricht (ASCII) in ein Binärsignal<br> - Gruppierung der Bits und Symbolabbildung<br> - Digitale Modulation<br> - Übertragung über einen AWGN-Kanal<br> - Demodulation und Dekodierung<br> - Berechnung der BER und Rekonstruktion der Nachricht",
+        "contribution": "<li>Entwurf und Implementierung einer vollständigen Sender-Empfänger-Kette</li> <li>Entwicklung einer ASCII-zu-Bit-Kodierung und Bitstromverwaltung</li> <li>Implementierung von Symbolmapping und Demapping für mehrere Modulationsverfahren</li> <li>Modellierung eines AWGN-Kanals</li> <li>Berechnung von BER-vs-SNR-Leistungskurven</li> <li>Vergleich zwischen spektraler Effizienz und Rauschrobustheit</li>",
+        "tools": "<span>MATLAB</span> <span>Digitale Modulationstheorie (BPSK, PSK, QAM)</span> <span>AWGN-Kanalmodellierung</span> <span>Statistische BER-Schätzung</span>",
+        "results": "Erstellung von BER-vs-SNR-Kurven für mehrere Modulationsverfahren. Bestätigung der erwarteten theoretischen Trends (höhere QAM-Ordnungen sind spektral effizienter, jedoch weniger robust gegenüber Rauschen). Erfolgreiche Rekonstruktion übertragener Nachrichten bei verschiedenen SNR-Bedingungen. Identifizierung möglicher Systemverbesserungen, z. B. durch Fehlererkennungsmechanismen wie Paritätsprüfung oder CRC.",
+        "learned": "Vertiefung des praktischen Verständnisses für Modulations-Trade-offs, spektrale Effizienz und Rauschabhängigkeit. Praktische Erfahrung in der Implementierung einer vollständigen digitalen Kommunikationskette und der Bewertung der Systemleistung unter stochastischen Kanalbedingungen."
+    },
+    "diel": {
+        "tab-title": "Juan Amado | Dielektrischer Übergang",
+        "title": "Entwurf und Optimierung von dielektrischen Wellenleiterstrukturen und Übergängen in PCB",
+        "data": "Bachelorarbeit · Betreut von Mario Faliero · 2025 · RF-Systeme",
+        "context": "Bachelorarbeit in Zusammenarbeit mit einem Doktorandenteam, mit Fokus auf elektromagnetischem Design, Herstellung und Validierung von dielektrischen Übertragungsleitungen und Übergängen, die mit PCB-Fertigung kompatibel sind. Das Projekt umfasste vollständige Designverantwortung sowie eine formale Verteidigung der Arbeit.",
+        "problem": "Entwurf, Simulation und Fertigung verlustarmer dielektrischer Wellenleiterstrukturen für die Integration in PCB, mit folgenden Anforderungen:<br> - Minimale Einfügedämpfung<br> - Gute Impedanzanpassung<br> - Effiziente und glatte Übergänge zwischen Führungsstrukturen<br> - Stabiler Betrieb im K- und Ka-Band (21–30 GHz)<br> Eine zentrale Herausforderung bestand darin, robuste Übergänge zwischen dielektrischen Leitungen und konventionellen Wellenleitern zu realisieren und gleichzeitig mechanische Stabilität sowie geringe Rückflussdämpfung bei hohen Frequenzen sicherzustellen.",
+        "contribution": "<li>Full-Wave-EM-Modellierung und Simulation</li> <li>Parametrische Sweeps und Geometrieoptimierung</li> <li>Entwurf von 3 dielektrischen Führungsstrukturen</li> <li>Entwurf und Abstimmung von 6 Übergängen zwischen Strukturen</li> <li>Analyse von S-Parametern und Feldverteilungen</li> <li>PCB-Layoutvorbereitung für die Fertigung</li> <li>Physische Herstellung und experimentelle Validierung</li>",
+        "tools": "<span>CST Studio Suite</span> <span>MATLAB</span> <span>VNA (Vektornetzwerkanalysator)</span> <span>PCB-Layout-Tools</span>",
+        "results": "Erzielung niedriger Einfügedämpfung und akzeptabler Rückflussdämpfung im Zielband K/Ka (21–30 GHz). Demonstration einer fertigungstauglichen dielektrischen Leitungsstruktur für PCB. Validierung der Übergangsleistung mit konsistenter Impedanzanpassung. Identifizierung des Bedarfs an einem mechanisch robusteren Übergang zwischen Dielektrikum und Wellenleiter zur weiteren Reduktion der Rückflussdämpfung.",
+        "learned": "Vertiefte Expertise in hochfrequenter dielektrischer Ausbreitung, Übergangsdesign und simulationsgetriebener Optimierung unter Fertigungsrestriktionen. Erweiterte Systemperspektive durch Berücksichtigung von mechanischer Stabilität, Herstellbarkeit und Übertragungseffizienz für reale Anwendungen wie Mobilfunk und Satellitensysteme."
+    },
+    "dosis": {
+        "tab-title": "Juan Amado | DoSis Radar",
+        "title": "Patch-Antennenarray (DoSis)",
+        "data": "Studentische Forschungsstelle (KIT) · Team von 5 PhD · 2025 · Antennensysteme für Radar + Forschungsumgebung für integrierte Schaltungen",
+        "context": "Forschungsorientiertes multidisziplinäres Projekt zur Entwicklung und Optimierung eines kompakten Patch-Antennenarrays mit symmetrischen Ein- und Ausgangsports für Radar-Anwendungen. Die Arbeit erfolgte in Zusammenarbeit mit einem PhD-Team, das einen Doppler-basierten Chip zur automatischen Zielverarbeitung entwickelte.",
+        "problem": "Entwurf eines Mikrostrip-Antennenarrays unter strengen physikalischen Randbedingungen (feste PCB-Höhe, Substratmaterialien und vorgegebene Chip-Portbreiten) mit folgenden Anforderungen:<br> - Abstrahlung bei 45° relativ zur Radarreferenzachse<br> - Mindestgewinn von 7 dBi<br> - Port-Kopplung unter −30 dB<br> Da die Portdimensionen des Chips festgelegt waren, bestand die Hauptaufgabe darin, eine korrekte 50-&Omega;-Impedanzanpassung für maximale Leistungsübertragung sicherzustellen und gleichzeitig die gegenseitige Kopplung zu minimieren.",
+        "contribution": "<li>Vollständige EM-Modellierung und Simulation des Antennenarrays</li> <li>Parametrische Sweeps und Geometrieoptimierung</li> <li>Entwurf und Bewertung von Entkopplungsstrukturen</li> <li>Analyse von Strahlungsdiagramm, Impedanzanpassung, Gewinn, Bandbreite und Kopplung</li> <li>Iterative Optimierung des Speisenetzwerks und der Arraykonfiguration</li>",
+        "tools": "<span>CST Studio Suite (FEM-Full-Wave-Simulation)</span> <span>Analytischer Mikrostrip-Impedanzrechner</span> <span>Buch: Antenna Theory – Balanis</span> <span>Buch: Microwave Engineering – Pozar</span>",
+        "results": "Erzielung eines Gewinns von 11.5 dBi (über dem Zielwert von 7 dBi). Reduzierung von S21 (Portkopplung) auf −20 dB (weitere 10 dB Verbesserung erforderlich). Verbesserung der Impedanzanpassung durch ein zweilagiges PCB-Design. Validierung der Strahlungseigenschaften und Feldverteilungen mittels EM-Simulation.",
+        "learned": "Vertieftes Verständnis des Verhaltens von Mikrostrip-Arrays, Speisenetzwerkdesign und Kopplungsreduktion. Erweiterte praktische Erfahrung in CST-basierter Optimierung und im Antennendesign unter PCB-Randbedingungen."
+    },
+    "sar": {
+        "tab-title": "Juan Amado | SAR",
+        "title":"Simulation und Rekonstruktion eines Ziels mit Synthetic Aperture Radar (SAR)",
+        "data":"Persönliches Projekt · Individuell · 2025 · Raumgestützte Radar-Fernerkundungssysteme",
+        "context":"Persönliches MATLAB-Simulationsprojekt zur Vertiefung der theoretischen Inhalte aus den Kursen Radar Systems Engineering und Spaceborne Radar Remote Sensing. Der Fokus lag auf der Modellierung der SAR-Signalerzeugung und der Zielrekonstruktion aus grundlegenden Prinzipien.",
+        "problem":"Simulation des Radar-Echos eines Punktziels mit Chirp-Signalen und Rekonstruktion des Zielbildes mittels Matched Filtering und konvolutionsbasierter Signalverarbeitung. Die zentralen Herausforderungen waren:<br> - Präzise Modellierung der Antwort eines Punktziels in Abhängigkeit von der Entfernung<br> - Einbeziehung der Radarplattformbewegung und der daraus resultierenden Dopplerfrequenzeffekte<br> - Berücksichtigung der Variation der empfangenen Leistung mit dem Azimutwinkel<br> - Korrekte Durchführung von Range- und Azimutkompression",
+        "contribution":"<li>Modellierung eines gesendeten linearen FM-Chirp-Signals</li> <li>Simulation der Zielreflexion unter Berücksichtigung von Laufzeit und Bewegung</li> <li>Implementierung von konvolutionsbasiertem Matched Filtering</li> <li>Durchführung der Range-Kompression</li> <li>Implementierung der Azimutverarbeitung und Analyse der Auflösungsgrenzen</li> <li>Bewertung von Auflösungs-Trade-offs zwischen Range- und Azimutdomäne</li>",
+        "tools":"<span>MATLAB</span> <span>Lineare FM-Signalmodellierung</span> <span>Matched Filtering</span> <span>Range- und Azimut-Kompressionsalgorithmen</span> <span>SAR</span>",
+        "results":"Erfolgreiche Range-Kompression mittels Matched Filtering. Teilweise Rekonstruktion im Azimutbereich erreicht. Identifizierung von Auflösungsverschlechterungen aufgrund von Annahmen im Bewegungsmodell und Doppler-Approximationen. Analyse der Sensitivität der Azimutauflösung gegenüber Annahmen zur Plattformgeschwindigkeit.",
+        "learned":"Vertieftes Verständnis der grundlegenden SAR-Signalverarbeitung, insbesondere der Rolle von Dopplerverarbeitung und Bewegungsmodellierung für die Azimutauflösung. Praktische Einblicke in die Sensitivität der SAR-Rekonstruktion gegenüber Modellierungsannahmen."
+    },
+    "vivaldi": {
+        "tab-title": "Juan Amado | Antennen",
+        "title":"Antennendesign: Vivaldi-, Circular-Patch- und Can-Antenne",
+        "data":"Workshop · Individuell · 2024 · Antennensimulation und -design",
+        "context":"Workshopprojekt im Rahmen des Kurses Antennas and Antenna Arrays mit Fokus auf Design, Simulation, Herstellung und Messung von Breitband- und Mikrostripantennen im 2,4-GHz-Band. Das Projekt umfasste die Parametrisierung und Optimierung von Vivaldi-, Circular-Patch- und zylindrischen Wellenleiterantennen („Can“-Antenne) mit CST Studio Suite, anschließend Arraysimulationen in MATLAB sowie experimentelle Validierung durch reale Fertigung und Messungen.",
+        "problem":"Entwurf von Antennen im dominanten Modus mit stabilen Strahlungsdiagrammen und effizienter Leistung im 2,4-GHz-ISM-Band bei korrekter 50-&Omega;-Impedanzanpassung.<br> Die zentrale Herausforderung bestand in der Auswahl und Optimierung mehrerer geometrischer Parameter (z. B. Patchradius, Wellenleiterdurchmesser, Taper-Länge, Feedposition), um Gewinn und Bandbreite zu maximieren und gleichzeitig Impedanzanpassung sowie Strahlungsstabilität sicherzustellen.",
+        "contribution":"<li>Parametrisierung der Geometrie mittels Parameter-Sweeps</li> <li>Optimierung der Antennengeometrie für Resonanz und Gewinn</li> <li>Analyse von Beamwidth und Feldverteilungen für Einzelantennen und Arrays</li> <li>Simulation von Antennenarrays in MATLAB</li> <li>Herstellung ausgewählter Designs</li> <li>Messung und Validierung in einer anechoischen Kammer</li> <li>Vergleich von simulierten und gemessenen S-Parametern sowie Strahlungsdiagrammen</li>",
+        "tools":"<span>CST Studio Suite</span> <span>MATLAB</span> <span>Analytische Antennenmodellierung</span> <span>Vektornetzwerkanalysator (VNA)</span> <span>Messungen in der anechoischen Kammer</span>",
+        "results":"Resonanz bei 2,4 GHz sowohl in Simulation als auch in den gefertigten Prototypen erreicht. Akzeptabler Return Loss und gute Strahlungseffizienz. Breitbandige Impedanzanpassung beim Vivaldi-Design. Messung von Strahlungsdiagrammen, Gewinn und S-Parametern mit guter Übereinstimmung zwischen Simulation und experimentellen Ergebnissen.",
+        "learned":"Praktisches Verständnis des Verhaltens von Breitband- und resonanten Antennen sowie des Einflusses der Geometrie auf Bandbreite, Gewinn und Anpassung vertieft. Erweiterte Kenntnisse über dominante Moden und kavitätsbasierte Strahlungsmechanismen sowie praktische Erfahrung mit Fertigungsqualität und deren Einfluss auf Return Loss und Messgenauigkeit."
+    },
+    "temp": {
+        "tab-title": "Juan Amado | Titel",
+        "title":"Projekttitel",
+        "data":"Projektbeschreibung",
+        "context":"Kontextbeschreibung",
+        "problem":"Problemstellung",
+        "contribution":"Meine Beiträge: <li>Listenelement</li>",
+        "tools":"<span>Werkzeug</span>",
+        "results":"Erzielte Ergebnisse",
+        "learned":"Meine wichtigsten Erkenntnisse"
+    }
+}
