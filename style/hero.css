@@ -85,7 +85,7 @@
     transform-origin: left;
 }
 /* Button spacing */
-button.btn {
+button.btn-important {
     display: block;
     margin: 2rem auto;
 }

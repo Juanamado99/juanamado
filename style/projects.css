@@ -95,6 +95,9 @@
 /* Card text */
 .project-card .card-body {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .project-card .card-text {
     font-family: 'Montserrat', sans-serif;
